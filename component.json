@@ -1,0 +1,14 @@
+{
+  "name": "editable-placeholder",
+  "version": "0.0.1",
+  "description": "ContentEditable placeholder for use with nickjackson/editable",
+  "keywords": ["contenteditable", "editable", "content", "input", "ui", "placeholder"],
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/events": "*"
+  },
+  "development": {
+    "nickjackson/editable": "*",
+    "ianstormtaylor/trigger-event": "*"
+  }
+}
