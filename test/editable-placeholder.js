@@ -62,6 +62,22 @@ describe('editable-placeholder', function(){
     expect(el.textContent).to.equal('the placeholder');
   })
 
+  it('should not remove placeholder on keydown if defaultPrevented', function(done){
+    var el = createEditable();
+
+    el.addEventListener('keydown', function(e){
+      if (e.keyCode == 13) {
+        e.preventDefault();
+      }
+    })
+
+    Editable(el).use(Placeholder('the placeholder', true));
+
+    trigger(el, 'keydown', {key: 'enter'});
+    expect(el.textContent).to.equal('the placeholder');
+    done();
+  })
+
   it('should have correct events to start', function(){
     var el = createEditable();
     var editable = Editable(el).use(Placeholder('the placeholder'));

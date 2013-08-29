@@ -135,6 +135,7 @@ Placeholder.prototype.block = function(e){
 
 Placeholder.prototype.onkeydown = function(e){
   var key = e.keyCode;
+  if (e.defaultPrevented) return;
 
   if (this.validKey(key) && this.showing) {
     this.hide();
