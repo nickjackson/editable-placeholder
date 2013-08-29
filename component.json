@@ -1,6 +1,6 @@
 {
   "name": "editable-placeholder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ContentEditable placeholder for use with nickjackson/editable",
   "keywords": ["contenteditable", "editable", "content", "input", "ui", "placeholder"],
   "scripts": ["index.js"],
